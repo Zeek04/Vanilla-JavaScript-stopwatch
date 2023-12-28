@@ -30,3 +30,23 @@ button{
 button:hover{
     background-color: black;
 }
+
+@media (max-width: 600px) {
+    body {
+        margin-top: 80%;
+    }
+
+    #stopwatch {
+        font-size: 60px;
+    }
+
+    #stopwatch span {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 30px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+}
