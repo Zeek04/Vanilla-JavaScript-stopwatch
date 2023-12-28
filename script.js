@@ -19,7 +19,9 @@ stopButton.addEventListener("click", () => {
 })
 
 resetButton.addEventListener("click", () => {
-    stopStopWatch();
+    clearInterval(stopWatchInterval);
+    elapsedPausedTime = new Date().getTime() - startTime;
+    stopWatchInterval = null
     elapsedPausedTime = 0
     document.getElementById("stopwatch").innerHTML = "00:00:00";
 })
